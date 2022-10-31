@@ -1,0 +1,1 @@
+const baseUrl = "https://625eece2873d6798e2b059c4.mockapi.io/api/server/MOCKAPI";
