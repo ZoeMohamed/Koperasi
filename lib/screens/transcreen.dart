@@ -17,7 +17,7 @@ class Bottomnav extends StatefulWidget {
 class _BottomnavState extends State<Bottomnav> {
   String _lastSelected = 'TAB: 0';
 
-  int _selectedIndex = 0;
+  int _selectedIndex = 1;
 
   void _selectedTab(int index) {
     setState(() {
@@ -40,7 +40,7 @@ class _BottomnavState extends State<Bottomnav> {
     super.initState();
   }
 
-  List<Widget> screens = [DashboardPage(), ClassPage(), ProfilePage()];
+  List<Widget> screens = [ClassPage(), DashboardPage(), ProfilePage()];
 
   TextEditingController controllertahun = TextEditingController(
       text: DateFormat('y').format(DateTime.now()) +
@@ -74,13 +74,13 @@ class _BottomnavState extends State<Bottomnav> {
         onTabSelected: _selectedTab,
         items: [
           FABBottomAppBarItem(
-            iconData: FluentIcons.home_16_filled, content: "",
+            iconData: FluentIcons.person_16_filled, content: "",
             // iconSize:20
           ),
           FABBottomAppBarItem(
-              iconData: FluentIcons.class_20_filled, content: ""),
+              iconData: FluentIcons.home_16_filled, content: ""),
           FABBottomAppBarItem(
-              iconData: FluentIcons.person_16_filled, content: ""),
+              iconData: FluentIcons.sign_out_20_filled, content: ""),
         ],
       ),
     );

@@ -35,7 +35,6 @@ dependencies:
   cupertino_icons: ^1.0.2
   fluentui_system_icons: ^1.1.180
   dio: ^4.0.6
-  sizer: ^2.0.15
   google_fonts: 2.2.0
   syncfusion_flutter_charts: ^19.4.53
   multilevel_drawer: ^2.0.0

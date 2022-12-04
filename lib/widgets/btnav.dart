@@ -25,7 +25,7 @@ class FABBottomAppBar extends StatefulWidget {
 }
 
 class FABBottomAppBarState extends State<FABBottomAppBar> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 1;
 
   _updateIndex(int index) {
     widget.onTabSelected(index);
@@ -90,8 +90,8 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
     required ValueChanged<int> onPressed,
   }) {
     Color color = _selectedIndex == index
-        ? Color(0xFF6259C1).withOpacity(0.9)
-        : Color(0xFF6259C1).withOpacity(0.4);
+        ? Color(0xFF25396F).withOpacity(0.9)
+        : Color(0xFF25396F).withOpacity(0.4);
     return Expanded(
       child: SizedBox(
         height: 80,
