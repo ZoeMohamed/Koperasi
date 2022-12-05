@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 class FABBottomAppBarItem {
@@ -53,15 +51,6 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
       child: Container(
         decoration: BoxDecoration(
           color: Colors.white,
-          // borderRadius: BorderRadius.only(
-          //     topLeft: Radius.circular(40), topRight: Radius.circular(40)),
-          // boxShadow: [
-          //   BoxShadow(
-          //       blurRadius: 3,
-          //       spreadRadius: 3,
-          //       color: Color(0xFFE2E2E2).withOpacity(1),
-          //       offset: Offset(3, 0))
-          // ],
         ),
         child: Row(
           mainAxisSize: MainAxisSize.max,
@@ -89,9 +78,7 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
     required int index,
     required ValueChanged<int> onPressed,
   }) {
-    Color color = _selectedIndex == index
-        ? Color(0xFF25396F).withOpacity(0.9)
-        : Color(0xFF25396F).withOpacity(0.4);
+    Color color = _selectedIndex == index ? Colors.white : Color(0xFF25396F);
     return Expanded(
       child: SizedBox(
         height: 80,
@@ -103,11 +90,23 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Icon(item.iconData, color: color),
-                // Text(
-                //   item.content,
-                //   style: TextStyle(fontSize: 10, color: color),
-                // )
+                Center(
+                  child: AnimatedContainer(
+                      curve: Curves.easeInQuad,
+                      duration: Duration(milliseconds: 100),
+                      width: 38,
+                      height: 38,
+                      decoration: BoxDecoration(
+                          color: _selectedIndex == index
+                              ? Color(0xFF25396F)
+                              : null,
+                          borderRadius: BorderRadius.circular(50)),
+                      child: Icon(
+                        item.iconData,
+                        color: color,
+                        size: 21,
+                      )),
+                ),
               ],
             ),
           ),

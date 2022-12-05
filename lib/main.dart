@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:koperasi/screens/dashboard.dart';
 import 'package:koperasi/screens/login.dart';
-import 'package:koperasi/screens/transcreen.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());

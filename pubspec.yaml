@@ -38,6 +38,8 @@ dependencies:
   google_fonts: 2.2.0
   syncfusion_flutter_charts: ^19.4.53
   multilevel_drawer: ^2.0.0
+  countup: ^0.1.4
+  percent_indicator: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -65,6 +67,7 @@ flutter:
     - assets/build.png
     - assets/images/static/profile.png
     - assets/images/static/asset_login.png
+    - assets/images/static/smk10.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
