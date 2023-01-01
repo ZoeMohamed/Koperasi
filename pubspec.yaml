@@ -68,6 +68,10 @@ flutter:
     - assets/images/static/profile.png
     - assets/images/static/asset_login.png
     - assets/images/static/smk10.png
+    - assets/images/static/rpl_menu.png
+    - assets/images/static/otkp_menu.png
+    - assets/images/static/akl_menu.png
+    - assets/images/static/bdp_menu.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
